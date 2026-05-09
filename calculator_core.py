@@ -10,7 +10,7 @@ def update_number(now_number,on_number): #入力数値を並べる関数
     now_number = now_number * 10 + on_number
     return now_number
 
-def operator_input(on_operator,pre_operator,pre_number,now_number) #演算子の入力関数
+def operator_input(on_operator,pre_operator,pre_number,now_number): #演算子の入力関数
     if pre_operator == 0:
         pre_operator = on_operator
         pre_number = now_number
@@ -25,7 +25,7 @@ def operator_input(on_operator,pre_operator,pre_number,now_number) #演算子の
 
     return(pre_operator,pre_number,now_number)
 
-def exe_equal(pre_operator,pre_number,now_number) #イコール処理
+def exe_equal(pre_operator,pre_number,now_number): #イコール処理
     if pre_operator == 1:
         now_number = pre_number + now_number
     elif pre_operator == 2:
